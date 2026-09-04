@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WML Confluence — QACE Processes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-icon" data-icon="compass"></span>
+    <span class="brand-mark">WML Confluence</span>
+  </div>
+  <nav class="topnav">
+    <a href="index.html"><span data-icon="home"></span><span class="nav-label">Latest Updates</span></a>
+    <a href="wml-processes.html"><span data-icon="clipboard-list"></span><span class="nav-label">WML Processes</span></a>
+    <a href="qace-processes.html" class="active"><span data-icon="shield-check"></span><span class="nav-label">QACE Processes</span></a>
+    <a href="wml-forms.html"><span data-icon="wrench"></span><span class="nav-label">WML Forms & Tools</span></a>
+  </nav>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-eyebrow"><span data-icon="shield-check"></span><span>Quality</span></div>
+    <h1>QACE Processes</h1>
+    <p class="page-desc">Call handling standards, documentation guidelines, and quality expectations.</p>
+  </div>
+
+  <div class="search-wrap">
+    <span data-icon="search"></span>
+    <input id="searchInput" class="search-input" type="text" placeholder="Search these articles...">
+  </div>
+
+  <div id="content"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span data-icon="compass" class="footer-brand-icon"></span>
+      <span><strong>WML Confluence</strong> &mdash; Web Modification Line</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Latest Updates</a>
+      <a href="wml-processes.html">WML Processes</a>
+      <a href="qace-processes.html">QACE Processes</a>
+      <a href="wml-forms.html">Forms &amp; Tools</a>
+    </div>
+  </div>
+  <div class="footer-note">Maintained by Arjon Medel (APM).</div>
+</footer>
+
+<script src="icons.js"></script>
+<script>
+const articles = [{"id": "qace-client-walkthroughs", "title": "Client walk-throughs", "summary": "How to handle a request to walk a client through making edits to their own site.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling"], "body": [{"t": "p", "c": "When a client calls in requesting a walk-through on how to make edits to the site, follow these steps for a more efficient way of handling the request."}, {"t": "h3", "c": "Offer to show the client how to do it first"}, {"t": "p", "c": "Not all clients are tech-savvy and would immediately catch on to steps given verbally. Show them how it is done first, so they already have an idea before trying it themselves. This works best when screen sharing."}, {"t": "ul", "c": ["Sample spiel: \"I can definitely show you how to do it Mr. (Client). If you don't mind, I'll do it for you first, then after, you can try doing it on your own, would that be okay with you?\""]}, {"t": "h3", "c": "If they are already familiar with the editor"}, {"t": "p", "c": "Proceed with the usual walk-through."}, {"t": "ul", "c": ["Sample spiel: \"I can definitely walk you through Mr. (Client). Are you already logged in on the website editor? Where would you like to start?\""]}]}, {"id": "qace-multiple-editors", "title": "More than 1 person inside the editor", "summary": "What to do when someone else is already editing the same site you're working on.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "editor"], "body": [{"t": "p", "c": "Take note of the following when you encounter a scenario where another person is inside the editor while you are making changes. The editor will show a banner warning that editing the same site at the same time is not recommended."}, {"t": "h3", "c": "If it is the external client you are speaking with"}, {"t": "p", "c": "Ask them to exit the editor, as having 2 people in there at the same time might cause errors or issues while making the changes."}, {"t": "h3", "c": "If it is an external client, but you are speaking with an internal client (BA/CSM/WC/TSS/PS calling on a client's behalf)"}, {"t": "p", "c": "Ask them to advise the client to exit the editor, for the same reason."}, {"t": "h3", "c": "If it is another WML or offline designer"}, {"t": "p", "c": "Message them in Teams to confirm if they are still making additional changes or finishing up on a modification request. Once confirmed that they are done, have them exit the editor."}]}, {"id": "qace-voice-collisions", "title": "Voice collisions", "summary": "How to avoid and recover gracefully when you and the caller talk over each other.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "soft skills"], "body": [{"t": "h3", "c": "What are voice collisions?"}, {"t": "ul", "c": ["Happens when both you and the caller are speaking at the same time.", "When the speaker is still speaking yet you cut them off and speak over them (can be intentional or not)."]}, {"t": "h3", "c": "What do you do to avoid it?"}, {"t": "ul", "c": ["When the caller is speaking, allow them to finish what they are trying to say before addressing or answering the concern.", "When you start speaking and they speak at the same time, PAUSE and allow them to finish their statement.", "Always practice the PAUSE."]}, {"t": "h3", "c": "Suggested spiels"}, {"t": "ul", "c": ["\"I'm sorry for that Mr. (Client), please go ahead.\"", "\"Sorry, I didn't mean to talk over you Mr. (Client), please continue.\"", "\"It seems there is a delay on our audio. Let me apologize in advance if it sounds like I'm talking over you Mr. (Client).\""]}]}, {"id": "qace-address-by-name", "title": "Addressing callers by name or title", "summary": "Why personalizing the call matters, and when it's acceptable to use \"Sir\" or \"Ma'am\" instead.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["soft skills", "quality"], "body": [{"t": "p", "c": "One of the things we can do to show our eagerness to assist is to build a personalized interaction with our callers. Addressing them by their name helps create that comfortable atmosphere."}, {"t": "h3", "c": "Things to consider to achieve this behavior"}, {"t": "ul", "c": ["As a means to personalize the call, agent must refer to the caller by their name or title if there is a title indicated on the related contacts in SF, or if the caller mentioned it upon introducing themselves.", "Designer to address the caller by name at least ONCE during the duration of the call, after asking for their name during the verification process.", "It is acceptable to use \"Ma'am\" or \"Sir\" if it is followed by the caller's name."]}]}, {"id": "qace-copyright-confirmation", "title": "Confirming copyright", "summary": "Why we confirm a client owns the rights to images before adding them to a site.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["compliance"], "body": [{"t": "h3", "c": "Why is it important to confirm copyright?"}, {"t": "ul", "c": ["This is to make sure that the client owns the rights, or has the rights, to use the images that are to be added on the site.", "Helps avoid any possible legal action towards Thryv for displaying photos or images on the website without the consent of the owner of those photos or images."]}, {"t": "h3", "c": "How to confirm copyright on a call"}, {"t": "p", "c": "Sample spiel: \"I can definitely add those to your site Mr. Client. Just wanted to confirm if you have the rights to use these images?\""}, {"t": "p", "c": "The only time we no longer need to confirm if they have the rights is if they proactively say that they own those images or have taken those images themselves."}]}, {"id": "qace-documentation-guidelines", "title": "Documentation guidelines", "summary": "How to write case notes so the next designer or department can pick up the request without asking questions.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["documentation", "case notes"], "body": [{"t": "h3", "c": "Indicate the page where the changes were made"}, {"t": "ul", "c": ["Naming the page gives the next designer or department a clear reference to locate the applied changes.", "The only exception is if the change was specific to the header, footer, or a pop-up not created for a specific page.", "If a change was made to a specific platform (tablet or mobile), indicate that in the case notes too.", "For multiple changes on one page, add the page name at the top, then list the bullet points of the changes made below it."]}, {"t": "h3", "c": "Links, images, and attachments"}, {"t": "ul", "c": ["If a link was provided through Zoom chat or Teams, indicate it in the case notes as well.", "If images or documents were sent through Zoom chat or Teams, attach them to the case notes.", "When you add a backup of the site, indicate \"Before\" and \"After\" and add these to the case notes."]}, {"t": "h3", "c": "Other documentation rules"}, {"t": "ul", "c": ["For multiple modification requests, specify each change separately in the case notes.", "Add any additional context \u2014 for example, if you transferred the call to another department, or tried calling back after a disconnect but couldn't reach the client.", "Add a detailed account of the request in both the Description and Resolution sections.", "Best practice: use the same content for Description and Resolution so you can copy and paste rather than writing two versions.", "Include the Preview Link in the case notes.", "Make sure the case status is \"Closed\" to avoid the case aging."]}, {"t": "h3", "c": "Documentation template"}, {"t": "ul", "c": ["Record Type: Product Support/Fulfillment", "Primary Reason: Thryv", "Tertiary: refer to tertiary reasons guidelines", "Notify Case Originator: select the checkbox", "Status: Closed", "Case Origin: Phone", "Priority: Low/Medium", "Subject: \"Post Launch Mods - <Website URL>\" (URL required)", "Description: list all change requests in a numbered or bulleted format"]}, {"t": "h3", "c": "Example case notes format"}, {"t": "ul", "c": ["Caller name:", "Phone:", "CID:", "Account Name:", "Issue:", "Resolution:", "WD:", "Back Up Naming Convention:", "Preview Link:", "Domain link:", "Modification request done through a call --- nothing follows ---"]}]}, {"id": "qace-followup-guidelines", "title": "Follow-up guidelines", "summary": "When a completion or status email is required, and the exact templates to use.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["documentation", "sdr"], "body": [{"t": "ul", "c": ["Applies to SDR \u2014 make sure to send a follow-up/completion email to your caller once the modifications are done.", "Attach your email to the case notes. If it is not attached, it did not happen.", "For cases endorsed to the offline team, always send a follow-up email to the caller regardless of whether the modifications are completed or not.", "If you promised to send an email about any other concern not addressed on the call, that email should also be attached to the case notes in SF.", "If you were speaking to an internal client (BA, WC, TSS, CSM, etc.) and they ask for a Teams message instead of email, take a screenshot of the message once done and attach it to the case notes."]}, {"t": "h3", "c": "Completion email template"}, {"t": "p", "c": "Hello (Caller),"}, {"t": "p", "c": "Thanks for contacting the Web Maintenance Team. We wanted to let you know that your requested website modifications are complete."}, {"t": "p", "c": "\u2022 (list the changes made on the website)"}, {"t": "p", "c": "site link:"}, {"t": "p", "c": "preview link:"}, {"t": "p", "c": "We're here to help, so feel free to give us a call between 8am to 7pm Mon-Fri CST and Sat 10am to 4pm at 844.99.THRYV (844.998.4798) and press option 3. Thanks for trusting Thryv to help your business. We look forward to working with you."}, {"t": "p", "c": "Please do not reply to this email thread. For additional inquiries or modifications please send us a new email at webmaintenance@thryv.com"}, {"t": "p", "c": "Sincerely, Web Maintenance Team"}, {"t": "h3", "c": "Not-yet-complete template (within 24\u201348 hour window)"}, {"t": "p", "c": "Hello (Caller),"}, {"t": "p", "c": "Thanks for contacting the Web Maintenance Team. We wanted to provide an update on your modification request. We are still currently working on completing the changes. We apologize for the delay and inconvenience. Please expect an email from us within 24-48 hours for update/completion of your request."}, {"t": "p", "c": "(Same closing as above: hours, phone number, webmaintenance@thryv.com, and sign-off.)"}]}, {"id": "qace-hold-procedure", "title": "Hold procedure", "summary": "The standard hold time, what to say, and what happens if you go over.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling"], "body": [{"t": "p", "c": "Follow these steps when placing a call on hold:"}, {"t": "ul", "c": ["Standard hold time is 2 minutes.", "Advise the client as to why there is a need to place the call on hold.", "Provide the standard timeframe of 2 minutes.", "Get back with the client on or before the given timeframe ends.", "If more time is needed, get back with the client first and advise them you need more time, then ask if you can place the call on hold for another 2 minutes.", "Always thank the client for patiently waiting after coming back from the hold."]}, {"t": "p", "c": "Exceeding the 2-minute threshold will be a markdown on Professional Service."}]}, {"id": "qace-location-spiel", "title": "Location spiel", "summary": "The approved response when a caller asks where Thryv or the agent is located.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "spiels"], "body": [{"t": "p", "c": "How to handle the \"Where are you located at?\" question:"}, {"t": "p", "c": "\"Mr./Ms. (caller) I appreciate you asking, Thryv headquarters is located in Dallas, Texas.\""}, {"t": "p", "c": "If the caller asks a follow-up question to dig deeper, respond with:"}, {"t": "p", "c": "\"For security purposes, we are unable to disclose our specific location.\""}, {"t": "p", "c": "Continue the conversation with a strong assurance-of-help statement, such as: \"Don't worry, I am more than able to assist you with your concern,\" or any similar wording."}]}, {"id": "qace-resolution-guidelines", "title": "Resolution (FCR/SDR) guidelines", "summary": "Confirming the right site version and checking every platform before calling a request resolved.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["fcr", "sdr", "resolution"], "body": [{"t": "p", "c": "Confirm the \"site\" version or the domain/URL link to be updated. Some accounts have more than one site on the editor, and redesigned sites may have multiple site versions \u2014 always confirm which one before making changes."}, {"t": "h3", "c": "FCR vs. SDR"}, {"t": "ul", "c": ["FCR (First Call Resolution) \u2014 changes completed within the call.", "SDR (Same Day Resolution) \u2014 for requests that cannot be completed within the call."]}, {"t": "h3", "c": "Business information updates"}, {"t": "ul", "c": ["If the request updates business information (business hours, logo, address, phone number, or email address), confirm whether the Thryv Listings need to be, or already were, updated.", "Check and confirm if the account has a Thryv ID \u2014 this only applies if the information updated was the main or primary business information.", "If confirmed they have NOT yet updated the Thryv Listings, offer to transfer to TSS.", "If the caller says they'll update it themselves or call TSS later, there is no need to insist on the transfer.", "If the caller is in a hurry and asks you to call TSS on their behalf after the call, make sure to follow through."]}, {"t": "h3", "c": "Check all locations of contact info"}, {"t": "ul", "c": ["Check header, footer, and the contact page.", "Check the navigation menu for tablet and mobile platforms.", "If the phone number is updated, make sure to update the \"Click to Call\" icon on the mobile header.", "Double-check whether phone numbers are linked to \"Click to Call,\" addresses are linked to a map, and emails are linked to open an email window."]}, {"t": "h3", "c": "Check all platforms"}, {"t": "ul", "c": ["Once done with modifications on desktop, confirm the changes were applied accurately to tablet and mobile as well.", "This applies no matter how simple the change was (e.g., an image or text change) \u2014 checking all platforms prevents a callback just to fix the others.", "If it can't be done within the call because the caller is in a hurry, check it during your wrap-up time."]}]}, {"id": "qace-screen-sharing", "title": "Screen sharing guidelines", "summary": "When screen sharing (and reverse screen sharing) is required, and the exceptions to the rule.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "screen share"], "body": [{"t": "p", "c": "Before doing the modification request, the agent MUST offer screen sharing with the caller. Regardless of how simple the change is, screen sharing must still be offered."}, {"t": "p", "c": "Sample spiel: \"Would like to do screen sharing, so that you can see the modifications being done live?\""}, {"t": "h3", "c": "How to offer it"}, {"t": "ul", "c": ["External clients \u2014 best practice is to send the Zoom invite link to the email on file in Salesforce. If they don't have access to that email, they can open zoom.us in their browser using your meeting ID and passcode.", "Internal clients \u2014 best practice is the Zoom invite process. If Zoom isn't available, send the invite link to Teams instead (Teams is for screen sharing only \u2014 call audio must still be on 8x8 for recording purposes)."]}, {"t": "p", "c": "If, after offering, the caller says \"It's up to you, I'm good either way,\" you can proceed without screen sharing: \"In that case, we can definitely proceed with the modifications, then after we can just refresh the site to check if everything is good. Would that be okay with you?\""}, {"t": "h3", "c": "When screen sharing is not necessary"}, {"t": "ul", "c": ["Caller is driving, currently walking out the door, or outside.", "Caller proactively says they don't need screen sharing.", "Caller proactively says they are not in front of a computer.", "Caller proactively says they are only on mobile/phone.", "Caller is in a hurry and proactively asks for the changes to be done offline.", "The only request is to gain website editor access via the Client Management section."]}, {"t": "h3", "c": "Reverse screen sharing"}, {"t": "p", "c": "This applies when the caller sees a constant error you can't see on your end, when the site looks fine on your end but not theirs, or when there's a process the caller needs to follow to provide information (e.g., locating a Google Analytics code)."}, {"t": "ul", "c": ["Instruct the caller to close any confidential information on their screen or browser first, since it may be recorded.", "Unshare your own screen first before asking them to share theirs.", "Advise them they can stop sharing at any time using the \"Stop Share\" button on the Zoom toolbar."]}, {"t": "p", "c": "Sample spiel: \"For me to better assist you on this, would you mind sharing your screen with me? So that I would be able to see what error you are getting. Kindly close any confidential information you might have open on your screen first, as this may be recorded. Kindly click on the share screen button on the bottom of our zoom meeting. Then click on the entire screen, then click on share again. Also, at any point if you wish to stop the screen share, just click on 'Stop Share' at the top of your screen.\""}]}, {"id": "qace-sdr-guidelines", "title": "SDR (Same Day Resolution) guidelines", "summary": "When SDR applies, the required standards, and the completion email template.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["sdr"], "body": [{"t": "h3", "c": "When SDR applies"}, {"t": "ul", "c": ["Caller is in a hurry and asks for the changes to be completed offline.", "Requested changes cannot be completed on the call, prompting you to offer SDR.", "You are almost done with the changes, but the caller needs to get off the phone and asks you to just send a message once they're done."]}, {"t": "h3", "c": "SDR standards to meet"}, {"t": "ul", "c": ["Provide the SDR timeframe of 24\u201348 hours.", "Advise the caller you will send an email once the modifications are completed.", "Confirm the email address listed in SF \u2014 if they prefer a different one, ask for it.", "Send the completion email to the confirmed address."]}, {"t": "p", "c": "Recommended spiel: \"Mr. Client, thank you for providing all the details about your request, just to inform you, the standard timeframe for this is 24-48 hours, but rest assured I will be prioritizing this after our call and will send you an email once it's done.\""}, {"t": "h3", "c": "Completion email template"}, {"t": "p", "c": "Same template as the Follow-Up Guidelines completion email \u2014 subject covers the changes made, includes site and preview links, and closes with Web Maintenance Team contact hours and the webmaintenance@thryv.com address."}]}, {"id": "qace-approval-republish", "title": "Seeking approval to republish", "summary": "Why asking before republishing is a habit, not an assumption.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "quality"], "body": [{"t": "h3", "c": "Make it a habit"}, {"t": "ul", "c": ["Once done with the modifications and checking all platforms to make sure changes were applied correctly, always ask the caller if it's good to republish.", "Even if they are in a hurry, always make sure to get their approval before republishing.", "Getting approval and assuming the site is ready are two different things."]}, {"t": "p", "c": "Correct: \"Would you like me to republish the site?\""}, {"t": "p", "c": "Incorrect: \"Let me republish the site now.\" / \"I'll republish the site now.\""}, {"t": "h3", "c": "Why it matters"}, {"t": "ul", "c": ["Confirms the client is good with how the changes look before making them live.", "Some callers won't want the changes republished yet \u2014 they may need confirmation from someone else first.", "If you miss seeking approval, you cannot republish \u2014 meaning the changes you made won't be reflected on the live site, which is what clients actually check."]}]}, {"id": "qace-empathy", "title": "Showing empathy when warranted", "summary": "Acknowledging a caller's frustration before jumping into a fix.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["soft skills", "quality"], "body": [{"t": "h3", "c": "Make it a habit"}, {"t": "ul", "c": ["Acknowledge and empathize, especially if the caller shares a negative experience \u2014 related to Thryv departments' service, the site's design/layout, or a personal negative experience \u2014 before providing assurance statements.", "Respond appropriately to the caller's emotion with empathy statements such as \"I'm sorry to hear that,\" or \"Oh, that's good to hear!\" for a positive experience.", "Do this PRIOR to making the website changes or addressing the concern \u2014 empathizing first shows the caller their feelings aren't being invalidated."]}, {"t": "h3", "c": "Sample spiels"}, {"t": "ul", "c": ["\"I apologize for the inconvenience Mr. (Caller), I'll make sure that is corrected for you right away. Can you please tell me what those changes were?\"", "\"I really sorry to hear that Mr. (Caller), let me see what I can do to have that fixed for you. Can you please give me the phone number associated to the account?\""]}]}, {"id": "qace-transfer-appropriate", "title": "Transfer when appropriate", "summary": "How to route a caller's non-website concern to the right Thryv department.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["call handling", "transfer"], "body": [{"t": "p", "c": "The Web Maintenance team can only assist with website modification requests, but it's unavoidable that a caller might raise other concerns better resolved by another Thryv department."}, {"t": "ul", "c": ["Actively listen to their concern. Probe to fully understand the issue so you can identify the correct department that can help.", "Offer to transfer or connect them to that department. If they agree, transfer after the modifications are completed, or check with them if they still want to be connected.", "Follow proper transfer protocol. Avoid cold transfers \u2014 advise the caller where they're being transferred and why."]}, {"t": "p", "c": "Sample spiel: \"Mr. (Client) I will be transferring you over to Thryv support so that they can correct the issue with regards to your business information on your Thryv listings. Please stay on the line, while I get a specialist who will assist you. Thank you so much.\""}]}, {"id": "qace-verification-process", "title": "Authentication & verification process", "summary": "How to verify a caller's identity and role \u2014 for direct contacts, transferred calls, and internal clients.", "author": "QACE Team", "updated": "Mar 2025", "tags": ["verification", "security"], "body": [{"t": "h3", "c": "Direct client contact \u2014 not listed in SF"}, {"t": "p", "c": "If the caller's name is only in the staff members section inside the Thryv CRM/Portal, an additional layer of security check applies. Their role within the CRM/Portal confirms whether they are allowed to access the website."}, {"t": "h3", "c": "How to check staff members and their roles"}, {"t": "ul", "c": ["Step 1: Pull up the account inside the Thryv CRM/Portal, click the 3 dots, then \"Log In As\".", "Step 2: Once inside the dashboard, click the dropdown arrow next to the Primary Admin's name (top right), then click \"Staff\".", "Step 3: You can now see the staff members, their login emails, and their roles."]}, {"t": "h3", "c": "Roles and access"}, {"t": "ul", "c": ["Can access the website editor: Primary Admin, Admin, Manager, Marketing.", "Cannot access the website editor: Collaborator, User."]}, {"t": "p", "c": "For Primary Admins, no additional verification is needed. For Admin, Manager, and Marketing roles, confirm their email matches their CRM/Portal login email, and have them send you an email from that address before proceeding."}, {"t": "p", "c": "For Collaborator and User roles, you need authorization from the main POC on file before assisting."}, {"t": "h3", "c": "Validating a non-POC caller"}, {"t": "p", "c": "When a POC authorizes you to assist a non-POC caller, only ask them to confirm the last 4 digits of the card or bank account on file if they want the non-POC added as a listed contact."}, {"t": "ul", "c": ["Step 1: On the account's Related List Quick Links in Salesforce, click \"Recurly Accounts\".", "Step 2: Click the Thryv ID.", "Step 3: Scroll to the Payment Method section to see the last 4 digits of the card or bank account."]}, {"t": "h3", "c": "Transferred calls"}, {"t": "ul", "c": ["If the transferring agent didn't introduce the caller or provide their role, confirm the caller's name and role (if internal \u2014 BA, WC, PS, TSS, SS, etc.) with the agent so you know whether authentication is still needed.", "If the caller was introduced but isn't listed as a related contact/POC in Salesforce, confirm with the transferring agent whether authorization was already obtained. If not, that must happen before you can assist.", "If authorization was confirmed, ask the agent to add the caller to the related contacts in SF.", "Always note in your case notes that the caller was authenticated or authorized by the previous agent before you handled the request."]}, {"t": "h3", "c": "Internal client contact"}, {"t": "ul", "c": ["No verification is needed for internal clients (BA, CSM, WC, TSS, PS, SD).", "For BAs whose name doesn't match Salesforce, search their full name in Teams to confirm they are an active Thryv employee.", "If their name doesn't show up in Teams search, they are not an active employee \u2014 get the account POC's authorization before proceeding."]}]}];
+const ARTICLE_ICON = "shield-check";
+
+let currentArticle = null;
+let searchQuery = '';
+
+function escapeHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function renderArticleBody(body){
+  return body.map(block => {
+    if (block.t === 'p') return '<p>' + escapeHtml(block.c) + '</p>';
+    if (block.t === 'h3') return '<h3>' + escapeHtml(block.c) + '</h3>';
+    if (block.t === 'ul') return '<ul>' + block.c.map(li => '<li>' + escapeHtml(li) + '</li>').join('') + '</ul>';
+    return '';
+  }).join('');
+}
+
+function buildArticleRow(article){
+  const row = document.createElement('button');
+  row.className = 'article-row';
+  row.style.cssText = 'cursor:pointer;';
+  row.innerHTML =
+    '<span class="article-row-icon">' + icon(ARTICLE_ICON) + '</span>' +
+    '<span class="article-row-body">' +
+      '<span class="article-title">' + escapeHtml(article.title) + '</span>' +
+      '<div class="article-summary">' + escapeHtml(article.summary) + '</div>' +
+      '<div class="article-meta">Updated ' + escapeHtml(article.updated) + '</div>' +
+    '</span>' +
+    '<span class="article-row-chevron">' + icon('chevron-right') + '</span>';
+  row.addEventListener('click', () => {
+    currentArticle = article.id;
+    searchQuery = '';
+    document.getElementById('searchInput').value = '';
+    render();
+  });
+  return row;
+}
+
+function render(){
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  if (articles.length === 0){
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.innerHTML = '<div class="empty-state-icon">' + icon('file-text') + '</div><h2>No articles yet</h2><p>This section is set up and ready \u2014 content will appear here once it is added.</p>';
+    content.appendChild(empty);
+    return;
+  }
+
+  if (currentArticle){
+    const article = articles.find(a => a.id === currentArticle);
+    const crumb = document.createElement('button');
+    crumb.className = 'crumb';
+    crumb.innerHTML = icon('chevron-left') + '<span>Back to all articles</span>';
+    crumb.addEventListener('click', () => { currentArticle = null; render(); });
+    content.appendChild(crumb);
+
+    const detail = document.createElement('div');
+    detail.className = 'article-detail';
+    detail.innerHTML =
+      '<div class="article-header"><h1>' + escapeHtml(article.title) + '</h1>' +
+      '<div class="article-byline">Updated ' + escapeHtml(article.updated) + '.</div></div>' +
+      '<div class="article-body">' + renderArticleBody(article.body) + '</div>';
+    content.appendChild(detail);
+    return;
+  }
+
+  const q = searchQuery.trim().toLowerCase();
+  const list = q
+    ? articles.filter(a => (a.title + ' ' + a.summary + ' ' + a.tags.join(' ')).toLowerCase().includes(q))
+    : articles;
+
+  if (q){
+    const heading = document.createElement('div');
+    heading.style.cssText = 'color:var(--text-muted);font-size:14px;margin-top:20px;';
+    heading.textContent = list.length + ' result' + (list.length === 1 ? '' : 's') + ' for "' + searchQuery + '"';
+    content.appendChild(heading);
+  }
+
+  if (list.length === 0){
+    const empty = document.createElement('div');
+    empty.className = 'empty-state no-border';
+    empty.innerHTML = '<div class="empty-state-icon">' + icon('search') + '</div><h2>Nothing found</h2><p>Try a different keyword.</p>';
+    content.appendChild(empty);
+    return;
+  }
+
+  const listEl = document.createElement('div');
+  listEl.className = 'article-list';
+  list.forEach(a => listEl.appendChild(buildArticleRow(a)));
+  content.appendChild(listEl);
+}
+
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  currentArticle = null;
+  render();
+});
+
+applyIcons();
+render();
+</script>
+</body>
+</html>

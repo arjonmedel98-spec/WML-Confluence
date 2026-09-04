@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WML Confluence — Latest Updates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-icon" data-icon="compass"></span>
+    <span class="brand-mark">WML Confluence</span>
+  </div>
+  <nav class="topnav">
+    <a href="index.html" class="active"><span data-icon="home"></span><span class="nav-label">Latest Updates</span></a>
+    <a href="wml-processes.html"><span data-icon="clipboard-list"></span><span class="nav-label">WML Processes</span></a>
+    <a href="qace-processes.html"><span data-icon="shield-check"></span><span class="nav-label">QACE Processes</span></a>
+    <a href="wml-forms.html"><span data-icon="wrench"></span><span class="nav-label">WML Forms & Tools</span></a>
+  </nav>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-eyebrow"><span data-icon="home"></span><span>Home</span></div>
+    <h1>Latest Updates</h1>
+    <p class="page-desc">Recent changes, announcements, and anything new WML agents should know about.</p>
+  </div>
+
+  <div class="slider" id="slider">
+    <span class="slider-tag"><span data-icon="bell"></span>Announcement</span>
+    <div class="slider-track" id="sliderTrack"></div>
+    <div class="slider-dots" id="sliderDots"></div>
+    <div class="slider-arrows">
+      <button class="slider-arrow" id="prevSlide" aria-label="Previous"><span data-icon="chevron-left"></span></button>
+      <button class="slider-arrow" id="nextSlide" aria-label="Next"><span data-icon="chevron-right"></span></button>
+    </div>
+  </div>
+
+  <div class="empty-state" id="updatesEmpty">
+    <div class="empty-state-icon"><span data-icon="file-text"></span></div>
+    <h2>No updates posted yet</h2>
+    <p>This is where new announcements, process changes, and release notes will show up.</p>
+  </div>
+
+  <div class="page-header" style="margin-top:44px;">
+    <div class="page-eyebrow"><span data-icon="compass"></span><span>Explore the hub</span></div>
+    <h1 style="font-size:22px;">Jump to a section</h1>
+  </div>
+  <div class="hub-grid">
+    <a class="hub-card" href="wml-processes.html">
+      <span class="hub-card-icon"><span data-icon="clipboard-list"></span></span>
+      <h3>WML Processes</h3>
+      <p>Case handling, documentation, and client-facing processes every agent is expected to know.</p>
+      <span class="hub-card-count"><span data-icon="file-text"></span>4 articles</span>
+    </a>
+    <a class="hub-card" href="qace-processes.html">
+      <span class="hub-card-icon"><span data-icon="shield-check"></span></span>
+      <h3>QACE Processes</h3>
+      <p>Call handling standards, documentation, and quality guidelines.</p>
+      <span class="hub-card-count"><span data-icon="file-text"></span>16 articles</span>
+    </a>
+    <a class="hub-card" href="wml-forms.html">
+      <span class="hub-card-icon"><span data-icon="wrench"></span></span>
+      <h3>WML Forms &amp; Tools</h3>
+      <p>Every form, tracker, and tool link WML agents and supervisors use day to day.</p>
+      <span class="hub-card-count"><span data-icon="link"></span>Quick links</span>
+    </a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span data-icon="compass" class="footer-brand-icon"></span>
+      <span><strong>WML Confluence</strong> &mdash; Web Modification Line</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Latest Updates</a>
+      <a href="wml-processes.html">WML Processes</a>
+      <a href="qace-processes.html">QACE Processes</a>
+      <a href="wml-forms.html">Forms &amp; Tools</a>
+    </div>
+  </div>
+  <div class="footer-note">Maintained by Arjon Medel (APM).</div>
+</footer>
+
+<script src="icons.js"></script>
+<script>
+const slides = [
+  { title: "No announcements yet", body: "This slider is ready to go \u2014 the first announcement posted here will appear automatically." }
+];
+
+let slideIndex = 0;
+
+function renderSlider(){
+  const track = document.getElementById('sliderTrack');
+  const dots = document.getElementById('sliderDots');
+  track.innerHTML = slides.map((s, i) =>
+    '<div class="slide' + (i === slideIndex ? ' active' : '') + '"><h3>' + s.title + '</h3><p>' + s.body + '</p></div>'
+  ).join('');
+  dots.innerHTML = slides.map((s, i) =>
+    '<button class="slider-dot' + (i === slideIndex ? ' active' : '') + '" data-i="' + i + '" aria-label="Slide ' + (i+1) + '"></button>'
+  ).join('');
+  dots.querySelectorAll('.slider-dot').forEach(d => {
+    d.addEventListener('click', () => { slideIndex = parseInt(d.dataset.i); renderSlider(); });
+  });
+}
+
+document.getElementById('prevSlide').addEventListener('click', () => {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  renderSlider();
+});
+document.getElementById('nextSlide').addEventListener('click', () => {
+  slideIndex = (slideIndex + 1) % slides.length;
+  renderSlider();
+});
+
+renderSlider();
+</script>
+</body>
+</html>
