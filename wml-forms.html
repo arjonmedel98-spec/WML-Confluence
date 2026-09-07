@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WML Confluence — Forms & Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-icon" data-icon="compass"></span>
+    <span class="brand-mark">WML Confluence</span>
+  </div>
+  <nav class="topnav">
+    <a href="index.html"><span data-icon="home"></span><span class="nav-label">Latest Updates</span></a>
+    <a href="wml-processes.html"><span data-icon="clipboard-list"></span><span class="nav-label">WML Processes</span></a>
+    <a href="qace-processes.html"><span data-icon="shield-check"></span><span class="nav-label">QACE Processes</span></a>
+    <a href="wml-prcdr.html"><span data-icon="folder-open"></span><span class="nav-label">WML PRCDR</span></a>
+    <a href="wml-forms.html" class="active"><span data-icon="wrench"></span><span class="nav-label">WML Forms & Tools</span></a>
+  </nav>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-eyebrow"><span data-icon="wrench"></span><span>Quick access</span></div>
+    <h1>WML Forms &amp; Tools</h1>
+    <p class="page-desc">Every form, tracker, tool link, and contact number WML agents and supervisors use day to day.</p>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-card-header">
+      <span class="contact-card-icon"><span data-icon="phone"></span></span>
+      <span class="contact-card-title">Phone Numbers &amp; Emails</span>
+      <span class="contact-card-count">24 contacts</span>
+    </div>
+    <div class="contact-filter-wrap">
+      <span data-icon="search"></span>
+      <input type="text" id="contactFilter" class="contact-filter" placeholder="Filter by name, number, or email...">
+    </div>
+    <div class="contact-table-wrap">
+      <table class="contact-table" id="contactTable">
+        <thead>
+          <tr><th>Contact</th><th>Phone</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+          <tr data-search="billing 844-998-4798 opt. 1 ">
+            <td class="c-name">Billing</td>
+            <td class="c-phone">844-998-4798 opt. 1</td>
+            <td class="c-email">—</td>
+          </tr>
+          <tr data-search="thryv specialist 844-998-4798 opt. 2 support@thryv.com">
+            <td class="c-name">Thryv Specialist</td>
+            <td class="c-phone">844-998-4798 opt. 2</td>
+            <td class="c-email"><a href="mailto:support@thryv.com">support@thryv.com</a></td>
+          </tr>
+          <tr data-search="web maintenance 844-998-4798 opt. 3 webmaintenance@thryv.com">
+            <td class="c-name">Web Maintenance</td>
+            <td class="c-phone">844-998-4798 opt. 3</td>
+            <td class="c-email"><a href="mailto:webmaintenance@thryv.com">webmaintenance@thryv.com</a></td>
+          </tr>
+          <tr data-search="client care 844-998-4798 opt. 4 socialsupport@thryv.com">
+            <td class="c-name">Client Care</td>
+            <td class="c-phone">844-998-4798 opt. 4</td>
+            <td class="c-email"><a href="mailto:socialsupport@thryv.com">socialsupport@thryv.com</a></td>
+          </tr>
+          <tr data-search="url 844-339-4574 / 2008101 urlmanagement@thryv.com">
+            <td class="c-name">URL</td>
+            <td class="c-phone">844-339-4574 / 2008101</td>
+            <td class="c-email"><a href="mailto:urlmanagement@thryv.com">urlmanagement@thryv.com</a></td>
+          </tr>
+          <tr data-search="social support 2009965 socialsupport@thryv.com">
+            <td class="c-name">Social Support</td>
+            <td class="c-phone">2009965</td>
+            <td class="c-email"><a href="mailto:socialsupport@thryv.com">socialsupport@thryv.com</a></td>
+          </tr>
+          <tr data-search="wc 2009826 n/a">
+            <td class="c-name">WC</td>
+            <td class="c-phone">2009826</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="solution center 888-231-2190 solution.center@thryv.com">
+            <td class="c-name">Solution Center</td>
+            <td class="c-phone">888-231-2190</td>
+            <td class="c-email"><a href="mailto:solution.center@thryv.com">solution.center@thryv.com</a></td>
+          </tr>
+          <tr data-search="hostopia / superpages 877-998-3775 n/a">
+            <td class="c-name">Hostopia / Superpages</td>
+            <td class="c-phone">877-998-3775</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="bristol yp listing 800-872-7380 n/a">
+            <td class="c-name">Bristol YP Listing</td>
+            <td class="c-phone">800-872-7380</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="client success partner 972-453-7902 clientsuccesspartners@thryv.com">
+            <td class="c-name">Client Success Partner</td>
+            <td class="c-phone">972-453-7902</td>
+            <td class="c-email"><a href="mailto:clientsuccesspartners@thryv.com">clientsuccesspartners@thryv.com</a></td>
+          </tr>
+          <tr data-search="video coq team  videocoq@thryv.com">
+            <td class="c-name">Video COQ Team</td>
+            <td class="c-phone">—</td>
+            <td class="c-email"><a href="mailto:VideoCOQ@thryv.com">VideoCOQ@thryv.com</a></td>
+          </tr>
+          <tr data-search="seo department 866-716-9212 / 844-791-9251 seocoq@thryv.com">
+            <td class="c-name">SEO Department</td>
+            <td class="c-phone">866-716-9212 / 844-791-9251</td>
+            <td class="c-email"><a href="mailto:seocoq@thryv.com">seocoq@thryv.com</a></td>
+          </tr>
+          <tr data-search="performance strategist 844-396-7878 n/a">
+            <td class="c-name">Performance Strategist</td>
+            <td class="c-phone">844-396-7878</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="thryv leads (844) 396-7878 / 844-339-6334 2009984 — live chat">
+            <td class="c-name">Thryv Leads</td>
+            <td class="c-phone">(844) 396-7878 / 844-339-6334</td>
+            <td class="c-email">2009984 — live chat</td>
+          </tr>
+          <tr data-search="hipaa — thryv tss 833-841-2399 / 2002399 n/a">
+            <td class="c-name">HIPAA — Thryv TSS</td>
+            <td class="c-phone">833-841-2399 / 2002399</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="gmb expert support 2003075 ">
+            <td class="c-name">GMB Expert Support</td>
+            <td class="c-phone">2003075</td>
+            <td class="c-email">—</td>
+          </tr>
+          <tr data-search="help desk 214-702-4175 option 1 n/a">
+            <td class="c-name">Help Desk</td>
+            <td class="c-phone">214-702-4175 option 1</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="yp listings 800-479-2977 opt 4 w/ thryv id">
+            <td class="c-name">YP Listings</td>
+            <td class="c-phone">800-479-2977</td>
+            <td class="c-email">Opt 4 w/ Thryv ID</td>
+          </tr>
+          <tr data-search="australian account +61 1800 468 479 n/a">
+            <td class="c-name">Australian Account</td>
+            <td class="c-phone">+61 1800 468 479</td>
+            <td class="c-email">N/A</td>
+          </tr>
+          <tr data-search="marketing center 2008109 ">
+            <td class="c-name">Marketing Center</td>
+            <td class="c-phone">2008109</td>
+            <td class="c-email">—</td>
+          </tr>
+          <tr data-search="client care experience (972) 453-0261 ">
+            <td class="c-name">Client Care Experience</td>
+            <td class="c-phone">(972) 453-0261</td>
+            <td class="c-email">—</td>
+          </tr>
+          <tr data-search="software success team (with thryv id) (800) 376-0499 ">
+            <td class="c-name">Software Success Team (with Thryv ID)</td>
+            <td class="c-phone">(800) 376-0499</td>
+            <td class="c-email">—</td>
+          </tr>
+          <tr data-search="digital retention team 972-453-0284 n/a">
+            <td class="c-name">Digital Retention Team</td>
+            <td class="c-phone">972-453-0284</td>
+            <td class="c-email">N/A</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="contact-empty" id="contactEmpty">No matching contacts.</div>
+    </div>
+  </div>
+
+  <div class="link-section open" data-section="forms">
+    <button class="link-section-toggle">
+      <span class="link-section-icon"><span data-icon="file-text"></span></span>
+      <span class="link-section-title">WML Forms</span>
+      <span class="link-section-count">3 links</span>
+      <span class="link-section-chevron"><span data-icon="chevron-down"></span></span>
+    </button>
+    <div class="link-section-body">
+      <a class="link-row" href="https://forms.office.com/pages/responsepage.aspx?id=WBSBStwPaEes7BGCuAkX7oVECbh6dyNLsRsIZ6H17XRUMUpGODlRQzRFUUk3SFNKUks4NklHM0JXRCQlQCN0PWcu&b2b" target="_blank" rel="noopener">
+        <span class="link-row-label">FCR Form</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://forms.office.com/pages/responsepage.aspx?id=WBSBStwPaEes7BGCuAkX7oVECbh6dyNLsRsIZ6H17XRUMEpLQ1BCRzBCU05YUUgyN1M4R0JLMjM0WSQlQCN0PWcu" target="_blank" rel="noopener">
+        <span class="link-row-label">SDR Form</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://docs.google.com/forms/d/15pgMVvuWbslkteMglILEJVijQ4KT_QU9PbzqOJT1d4w/viewform?edit_requested=true" target="_blank" rel="noopener">
+        <span class="link-row-label">WML | Non-adherence Adjustment</span>
+        <span data-icon="external-link"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="link-section" data-section="trackers">
+    <button class="link-section-toggle">
+      <span class="link-section-icon"><span data-icon="folder-open"></span></span>
+      <span class="link-section-title">WML Tracker</span>
+      <span class="link-section-count">7 links</span>
+      <span class="link-section-chevron"><span data-icon="chevron-down"></span></span>
+    </button>
+    <div class="link-section-body">
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/medela01/IQDWZUxUtUaBQL0BVTsSKLg8ASoFmSVRTSAKVwzdoShJT0o?e=ch8KbW" target="_blank" rel="noopener">
+        <span class="link-row-label">Internet Issue Tracker</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/redb01/IQAyp1byg4dlSL3o8zxwvyBQAaJhiwsbs8TB8-OpmoBrBME?e=JMxWLm&nav=MTVfe0U4MjQzNkRELTUyOEItNDdDOS04NUE5LTE1RkVCMzk0RDdEN30" target="_blank" rel="noopener">
+        <span class="link-row-label">Call Disconnected Tracker</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/medela01/IQAvtD8up7L8T7XW7kaRCpzZAVtn6Q_dbNy9SWgAuIc5ACo?e=ZEZibm" target="_blank" rel="noopener">
+        <span class="link-row-label">Weekend Shift | List of Agents</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/redb01/IQAS81hDbs5nS427wDBDfHOdAZxZYaXYUcW3z-h2yMlkUyU?e=UfRiTZ&nav=MTVfe0U4MjQzNkRELTUyOEItNDdDOS04NUE5LTE1RkVCMzk0RDdEN30" target="_blank" rel="noopener">
+        <span class="link-row-label">WML Leave Tracker</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/barrir01/EW20wOLyxXFJtGNMVS9AZhMBbG39XbOEX5q93hODf4lkxA?e=JxhgJs" target="_blank" rel="noopener">
+        <span class="link-row-label">WML OT Tracker</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/:x:/p/barrir01/EW20wOLyxXFJtGNMVS9AZhMBbG39XbOEX5q93hODf4lkxA?e=JxhgJs" target="_blank" rel="noopener">
+        <span class="link-row-label">WML Callback Tracker</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://docs.google.com/spreadsheets/d/1X8mRQDWKkLaBhysHIK8gSnANb3AlyzpTJyQXyVsy2eY/edit?gid=0#gid=0" target="_blank" rel="noopener">
+        <span class="link-row-label">DF Approved Custom Codes</span>
+        <span data-icon="external-link"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="link-section" data-section="tools">
+    <button class="link-section-toggle">
+      <span class="link-section-icon"><span data-icon="wrench"></span></span>
+      <span class="link-section-title">WML Tools</span>
+      <span class="link-section-count">11 links</span>
+      <span class="link-section-chevron"><span data-icon="chevron-down"></span></span>
+    </button>
+    <div class="link-section-body">
+      <a class="link-row" href="https://siteeditor.thryv.com/" target="_blank" rel="noopener">
+        <span class="link-row-label">Site Editor</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://my.duda.co/home/dashboard/sites" target="_blank" rel="noopener">
+        <span class="link-row-label">Vivial Sites</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://go.thryv.com/manage/businesses#/login" target="_blank" rel="noopener">
+        <span class="link-row-label">Thryv CRM</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://dexmedia.okta.com/" target="_blank" rel="noopener">
+        <span class="link-row-label">Thryv OKTA Apps</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://dexmedia.okta.com/" target="_blank" rel="noopener">
+        <span class="link-row-label">Chatbot</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://gpt.thryv.com/" target="_blank" rel="noopener">
+        <span class="link-row-label">Copilot</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://who.is/" target="_blank" rel="noopener">
+        <span class="link-row-label">Who.is</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://who.is/" target="_blank" rel="noopener">
+        <span class="link-row-label">Connecting Thryv Website to Business Center</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://performance.corp.pvt/metrics/pages/stock-art-tracking-application/" target="_blank" rel="noopener">
+        <span class="link-row-label">PMA</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank" rel="noopener">
+        <span class="link-row-label">W3Schools Compiler</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://websites.thryv.info/" target="_blank" rel="noopener">
+        <span class="link-row-label">Thryv Website Showcase</span>
+        <span data-icon="external-link"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="link-section" data-section="policies">
+    <button class="link-section-toggle">
+      <span class="link-section-icon"><span data-icon="triangle-alert"></span></span>
+      <span class="link-section-title">Policies</span>
+      <span class="link-section-count">1 link</span>
+      <span class="link-section-chevron"><span data-icon="chevron-down"></span></span>
+    </button>
+    <div class="link-section-body">
+      <a class="link-row" href="https://file.notion.so/f/f/20a6190e-d553-810f-9e13-000395a5666d/e90b8857-683a-4953-bef4-420cade731f4/Zero_Tolerance_Policy_-_Digital_Fulfillment_Updated_July_20_2023_(1)_(1).pdf?table=block&id=3836190e-d553-8093-98aa-ed6ddb0bc4d6&spaceId=20a6190e-d553-810f-9e13-000395a5666d&expirationTimestamp=1788501600000&signature=_A2_EWqZbOEdwFpRPYDWsKUdb4DQGXcI1qhTvar9Z24&downloadName=Zero+Tolerance+Policy+-+Digital+Fulfillment_Updated+July+20+2023+%281%29+%281%29.pdf" target="_blank" rel="noopener">
+        <span class="link-row-label">ZTP — Zero Tolerance Policy (Digital Fulfillment)</span>
+        <span data-icon="external-link"></span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span data-icon="compass" class="footer-brand-icon"></span>
+      <span><strong>WML Confluence</strong> &mdash; Web Modification Line</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Latest Updates</a>
+      <a href="wml-processes.html">WML Processes</a>
+      <a href="qace-processes.html">QACE Processes</a>
+      <a href="wml-forms.html">Forms &amp; Tools</a>
+    </div>
+  </div>
+  <div class="footer-note">Maintained by Arjon Medel (APM).</div>
+</footer>
+<script src="icons.js"></script>
+<script>
+applyIcons();
+document.querySelectorAll('.link-section-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.link-section').classList.toggle('open');
+  });
+});
+
+const contactFilter = document.getElementById('contactFilter');
+if (contactFilter){
+  const rows = Array.from(document.querySelectorAll('#contactTable tbody tr'));
+  const emptyEl = document.getElementById('contactEmpty');
+  contactFilter.addEventListener('input', () => {
+    const q = contactFilter.value.trim().toLowerCase();
+    let visible = 0;
+    rows.forEach(row => {
+      const match = row.dataset.search.includes(q);
+      row.classList.toggle('contact-hidden', !match);
+      if (match) visible++;
+    });
+    emptyEl.classList.toggle('show', visible === 0);
+  });
+}
+</script>
+</body>
+</html>
