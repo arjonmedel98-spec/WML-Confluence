@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WML Confluence — WML PRCDR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-icon" data-icon="compass"></span>
+    <span class="brand-mark">WML Confluence</span>
+  </div>
+  <nav class="topnav">
+    <a href="index.html"><span data-icon="home"></span><span class="nav-label">Latest Updates</span></a>
+    <a href="wml-processes.html"><span data-icon="clipboard-list"></span><span class="nav-label">WML Processes</span></a>
+    <a href="qace-processes.html"><span data-icon="shield-check"></span><span class="nav-label">QACE Processes</span></a>
+    <a href="wml-prcdr.html" class="active"><span data-icon="folder-open"></span><span class="nav-label">WML PRCDR</span></a>
+    <a href="wml-forms.html"><span data-icon="wrench"></span><span class="nav-label">WML Forms & Tools</span></a>
+    <a href="nps-checklist.html"><span data-icon="star"></span><span class="nav-label">NPS Checklist</span></a>
+  </nav>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-eyebrow"><span data-icon="folder-open"></span><span>Procedures</span></div>
+    <h1>WML PRCDR</h1>
+    <p class="page-desc">Official PRCDR documents on SharePoint. These open the source file directly, so they always reflect the latest signed-off version.</p>
+  </div>
+
+  <div class="link-section open" data-section="prcdr-docs">
+    <button class="link-section-toggle">
+      <span class="link-section-icon"><span data-icon="file-text"></span></span>
+      <span class="link-section-title">PRCDR Documents</span>
+      <span class="link-section-count">2 links</span>
+      <span class="link-section-chevron"><span data-icon="chevron-down"></span></span>
+    </button>
+    <div class="link-section-body">
+      <a class="link-row" href="https://thryv-my.sharepoint.com/shared?listurl=%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments&viewid=c793b081%2D4d88%2D4cb8%2Da4ab%2D37e7ef799d19&ga=1&id=%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments%2FWML%20Nesting%20Materials%2FPRCDR%2FPRCDR%20%2D%20WML%20Agent%20%2D%20Direct%20Client%20Contact%20Phone%20Process%20v%2E2025%2Epdf&parent=%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments%2FWML%20Nesting%20Materials%2FPRCDR" target="_blank" rel="noopener">
+        <span class="link-row-label">PRCDR — WML Agent - Direct Client Contact Phone Process v.2025</span>
+        <span data-icon="external-link"></span>
+      </a>
+      <a class="link-row" href="https://thryv-my.sharepoint.com/shared?listurl=https%3A%2F%2Fthryv%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments&id=%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments%2FWML%20Nesting%20Materials%2FPRCDR%2FThryv%20Designer%20SEO%20Mega%20Doc%20%2D%202026v1%2Epdf&parent=%2Fpersonal%2Fsantoh01%5Fthryv%5Fcom%2FDocuments%2FWML%20Nesting%20Materials%2FPRCDR&shareLink=1&ga=1" target="_blank" rel="noopener">
+        <span class="link-row-label">Thryv — Designer SEO Mega Guide</span>
+        <span data-icon="external-link"></span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span data-icon="compass" class="footer-brand-icon"></span>
+      <span><strong>WML Confluence</strong> &mdash; Web Modification Line</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Latest Updates</a>
+      <a href="wml-processes.html">WML Processes</a>
+      <a href="qace-processes.html">QACE Processes</a>
+      <a href="wml-forms.html">Forms &amp; Tools</a>
+      <a href="nps-checklist.html">NPS Checklist</a>
+    </div>
+  </div>
+  <div class="footer-note">Maintained by Arjon Medel (APM).</div>
+</footer>
+<script src="icons.js"></script>
+<script>
+applyIcons();
+document.querySelectorAll('.link-section-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.link-section').classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

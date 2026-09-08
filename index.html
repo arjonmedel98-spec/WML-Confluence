@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WML Confluence — Latest Updates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-icon" data-icon="compass"></span>
+    <span class="brand-mark">WML Confluence</span>
+  </div>
+  <nav class="topnav">
+    <a href="index.html" class="active"><span data-icon="home"></span><span class="nav-label">Latest Updates</span></a>
+    <a href="wml-processes.html"><span data-icon="clipboard-list"></span><span class="nav-label">WML Processes</span></a>
+    <a href="qace-processes.html"><span data-icon="shield-check"></span><span class="nav-label">QACE Processes</span></a>
+    <a href="wml-prcdr.html"><span data-icon="folder-open"></span><span class="nav-label">WML PRCDR</span></a>
+    <a href="wml-forms.html"><span data-icon="wrench"></span><span class="nav-label">WML Forms & Tools</span></a>
+    <a href="nps-checklist.html"><span data-icon="star"></span><span class="nav-label">NPS Checklist</span></a>
+  </nav>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-eyebrow"><span data-icon="home"></span><span>Home</span></div>
+    <h1>Latest Updates</h1>
+    <p class="page-desc">Recent changes, announcements, and anything new WML agents should know about.</p>
+  </div>
+
+  <div class="slider" id="slider">
+    <span class="slider-tag"><span data-icon="bell"></span>Announcement</span>
+    <div class="slider-track" id="sliderTrack"></div>
+    <div class="slider-dots" id="sliderDots"></div>
+    <div class="slider-arrows">
+      <button class="slider-arrow" id="prevSlide" aria-label="Previous"><span data-icon="chevron-left"></span></button>
+      <button class="slider-arrow" id="nextSlide" aria-label="Next"><span data-icon="chevron-right"></span></button>
+    </div>
+  </div>
+
+  <div class="search-wrap">
+    <span data-icon="search"></span>
+    <input id="searchInput" class="search-input" type="text" placeholder="Search updates...">
+  </div>
+
+  <div id="content"></div>
+
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h3>Looking for the latest additions?</h3>
+      <p>Jump straight to the newest topics added to WML Processes.</p>
+    </div>
+    <a class="cta-btn" href="wml-processes.html#latest-processes">See Latest Updates<span data-icon="arrow-right" class="icon"></span></a>
+  </div>
+
+  <div class="page-header" style="margin-top:44px;">
+    <div class="page-eyebrow"><span data-icon="compass"></span><span>Explore the hub</span></div>
+    <h1 style="font-size:22px;">Jump to a section</h1>
+  </div>
+  <div class="hub-grid">
+    <a class="hub-card" href="wml-processes.html">
+      <span class="hub-card-icon"><span data-icon="clipboard-list"></span></span>
+      <h3>WML Processes</h3>
+      <p>Case handling, documentation, and client-facing processes every agent is expected to know.</p>
+      <span class="hub-card-count"><span data-icon="file-text"></span>55 articles</span>
+    </a>
+    <a class="hub-card" href="qace-processes.html">
+      <span class="hub-card-icon"><span data-icon="shield-check"></span></span>
+      <h3>QACE Processes</h3>
+      <p>Call handling standards, documentation guidelines, and quality expectations.</p>
+      <span class="hub-card-count"><span data-icon="file-text"></span>16 articles</span>
+    </a>
+    <a class="hub-card" href="wml-prcdr.html">
+      <span class="hub-card-icon"><span data-icon="folder-open"></span></span>
+      <h3>WML PRCDR</h3>
+      <p>Official procedure documents, linked straight from SharePoint.</p>
+      <span class="hub-card-count"><span data-icon="link"></span>Source documents</span>
+    </a>
+    <a class="hub-card" href="wml-forms.html">
+      <span class="hub-card-icon"><span data-icon="wrench"></span></span>
+      <h3>WML Forms &amp; Tools</h3>
+      <p>Every form, tracker, and tool link WML agents and supervisors use day to day.</p>
+      <span class="hub-card-count"><span data-icon="link"></span>Quick links</span>
+    </a>
+    <a class="hub-card" href="nps-checklist.html">
+      <span class="hub-card-icon"><span data-icon="star"></span></span>
+      <h3>NPS Checklist</h3>
+      <p>Quick-scan recommendation checklist and closing spiels to use while on a modification call.</p>
+      <span class="hub-card-count"><span data-icon="file-text"></span>Recommendation guide</span>
+    </a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span data-icon="compass" class="footer-brand-icon"></span>
+      <span><strong>WML Confluence</strong> &mdash; Web Modification Line</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Latest Updates</a>
+      <a href="wml-processes.html">WML Processes</a>
+      <a href="qace-processes.html">QACE Processes</a>
+      <a href="wml-forms.html">Forms &amp; Tools</a>
+      <a href="nps-checklist.html">NPS Checklist</a>
+    </div>
+  </div>
+  <div class="footer-note">Maintained by Arjon Medel (APM).</div>
+</footer>
+
+<script src="icons.js"></script>
+<script>
+const updates = [{"id": "update-multiple-google-tags", "title": "IMPORTANT UPDATE | Multiple Google Tags", "summary": "Clients are no longer limited to one Google tag and one Google Tag Manager ID.", "author": "WML Team", "updated": "Sep 2026", "tags": ["google analytics", "seo"], "body": [{"t": "p", "c": "Hello Team,"}, {"t": "p", "c": "Sharing this update for your reference and guidance."}, {"t": "h3", "c": "Support for multiple Google tags"}, {"t": "ul", "c": ["Clients are no longer limited to one Google tag and one Google Tag Manager ID.", "Add as many tags as the client requests, comma-separated, to the Google Tools field in the editor."]}, {"t": "link", "href": "wml-processes.html#wml-multiple-google-tags", "label": "View the full process in WML Processes \u2192"}]}, {"id": "update-review-widget", "title": "IMPORTANT REMINDER | Thryv Customer Review Widget", "summary": "Promote the new Review widget instead of manually adding Google reviews \u2014 plus how to add Facebook-style reviews.", "author": "WML Team", "updated": "Sep 2026", "tags": ["reviews", "widgets"], "body": [{"t": "p", "c": "Hello Team,"}, {"t": "p", "c": "Sharing this reminder in line with the recent release of the new Thryv Customer Review widget."}, {"t": "p", "c": "Since adding reviews or recent reviews are both part of our NPS recommendation checklist, this is our opportunity to promote the use of this new widget. Using this widget eliminates the need to manually add Google reviews to the site."}, {"t": "h3", "c": "Things to remember"}, {"t": "ul", "c": ["The Google/Yelp business profiles must be connected in the client's Thryv Marketing Center / Business Center Listings Management section. If this isn't done yet, offer to connect them with Thryv Support.", "If the feed is blank after adding the widget, the client needs to configure their listings before reviews can appear. Either transfer the client to Thryv Support, or send them the Google Business Profile guide to complete it themselves."]}, {"t": "p", "c": "We've also seen clients ask for Facebook-style reviews (name and photo visible), which we can add via an embed code from their Facebook review feed \u2014 note the embed only covers one review at a time."}, {"t": "link", "href": "wml-processes.html#wml-review-widget", "label": "View the full process in WML Processes \u2192"}]}, {"id": "update-page-entitlement-30", "title": "Page entitlement increasing from 15 to 30 pages", "summary": "Product is raising the new-build page limit to 30 pages \u2014 treat this as the standard entitlement going forward.", "author": "WML Team", "updated": "Sep 2026", "tags": ["pages", "entitlement"], "body": [{"t": "p", "c": "Heads up, our Product partners are upping the limit for new website builds from 15 pages to 30."}, {"t": "p", "c": "We're working on updating RST's page entitlement reporting and documentation, but please treat new website entitlements as 30 pages moving forward. Anywhere in our documentation, if we see 15 pages, note that it should now read 30 pages. This includes requests to add pages to existing websites."}, {"t": "p", "c": "We are still seeing average website size at 10 pages, and WCs will not encourage clients to use all 30 pages unless necessary for the client's SEO."}]}];
+const slides = updates.map(u => ({ title: u.title, body: u.summary }));
+
+let slideIndex = 0;
+let currentUpdate = null;
+let searchQuery = '';
+
+function escapeHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function renderSlider(){
+  const track = document.getElementById('sliderTrack');
+  const dots = document.getElementById('sliderDots');
+  if (slides.length === 0){
+    track.innerHTML = '<div class="slide active"><h3>No announcements yet</h3><p>This slider is ready to go \u2014 the first announcement posted here will appear automatically.</p></div>';
+    dots.innerHTML = '';
+    return;
+  }
+  track.innerHTML = slides.map((s, i) =>
+    '<div class="slide' + (i === slideIndex ? ' active' : '') + '"><h3>' + escapeHtml(s.title) + '</h3><p>' + escapeHtml(s.body) + '</p></div>'
+  ).join('');
+  dots.innerHTML = slides.map((s, i) =>
+    '<button class="slider-dot' + (i === slideIndex ? ' active' : '') + '" data-i="' + i + '" aria-label="Slide ' + (i+1) + '"></button>'
+  ).join('');
+  dots.querySelectorAll('.slider-dot').forEach(d => {
+    d.addEventListener('click', () => { slideIndex = parseInt(d.dataset.i); renderSlider(); });
+  });
+}
+
+document.getElementById('prevSlide').addEventListener('click', () => {
+  if (slides.length === 0) return;
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  renderSlider();
+});
+document.getElementById('nextSlide').addEventListener('click', () => {
+  if (slides.length === 0) return;
+  slideIndex = (slideIndex + 1) % slides.length;
+  renderSlider();
+});
+
+function renderArticleBody(body){
+  return body.map(block => {
+    if (block.t === 'p') return '<p>' + escapeHtml(block.c) + '</p>';
+    if (block.t === 'h3') return '<h3>' + escapeHtml(block.c) + '</h3>';
+    if (block.t === 'ul') return '<ul>' + block.c.map(li => '<li>' + escapeHtml(li) + '</li>').join('') + '</ul>';
+    if (block.t === 'link') return '<a class="body-link" href="' + escapeHtml(block.href) + '">' + escapeHtml(block.label) + '</a>';
+    return '';
+  }).join('');
+}
+
+function buildArticleRow(article){
+  const row = document.createElement('button');
+  row.className = 'article-row';
+  row.style.cssText = 'cursor:pointer;';
+  row.innerHTML =
+    '<span class="article-row-icon">' + icon('bell') + '</span>' +
+    '<span class="article-row-body">' +
+      '<span class="article-title">' + escapeHtml(article.title) + '</span>' +
+      '<div class="article-summary">' + escapeHtml(article.summary) + '</div>' +
+      '<div class="article-meta">Updated ' + escapeHtml(article.updated) + '</div>' +
+    '</span>' +
+    '<span class="article-row-chevron">' + icon('chevron-right') + '</span>';
+  row.addEventListener('click', () => {
+    currentUpdate = article.id;
+    searchQuery = '';
+    document.getElementById('searchInput').value = '';
+    render();
+  });
+  return row;
+}
+
+function render(){
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  if (updates.length === 0){
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.innerHTML = '<div class="empty-state-icon">' + icon('file-text') + '</div><h2>No updates posted yet</h2>';
+    content.appendChild(empty);
+    return;
+  }
+
+  if (currentUpdate){
+    const article = updates.find(a => a.id === currentUpdate);
+    const crumb = document.createElement('button');
+    crumb.className = 'crumb';
+    crumb.innerHTML = icon('chevron-left') + '<span>Back to all updates</span>';
+    crumb.addEventListener('click', () => { currentUpdate = null; render(); });
+    content.appendChild(crumb);
+
+    const detail = document.createElement('div');
+    detail.className = 'article-detail';
+    detail.innerHTML =
+      '<div class="article-header"><h1>' + escapeHtml(article.title) + '</h1>' +
+      '<div class="article-byline">Updated ' + escapeHtml(article.updated) + '.</div></div>' +
+      '<div class="article-body">' + renderArticleBody(article.body) + '</div>';
+    content.appendChild(detail);
+    return;
+  }
+
+  const q = searchQuery.trim().toLowerCase();
+  const list = q
+    ? updates.filter(a => (a.title + ' ' + a.summary + ' ' + a.tags.join(' ')).toLowerCase().includes(q))
+    : updates;
+
+  if (q){
+    const heading = document.createElement('div');
+    heading.style.cssText = 'color:var(--text-muted);font-size:14px;margin-top:20px;';
+    heading.textContent = list.length + ' result' + (list.length === 1 ? '' : 's') + ' for "' + searchQuery + '"';
+    content.appendChild(heading);
+  }
+
+  if (list.length === 0){
+    const empty = document.createElement('div');
+    empty.className = 'empty-state no-border';
+    empty.innerHTML = '<div class="empty-state-icon">' + icon('search') + '</div><h2>Nothing found</h2><p>Try a different keyword.</p>';
+    content.appendChild(empty);
+    return;
+  }
+
+  const listEl = document.createElement('div');
+  listEl.className = 'article-list';
+  list.forEach(a => listEl.appendChild(buildArticleRow(a)));
+  content.appendChild(listEl);
+}
+
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  currentUpdate = null;
+  render();
+});
+
+applyIcons();
+renderSlider();
+render();
+</script>
+</body>
+</html>
